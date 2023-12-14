@@ -56,6 +56,4 @@ public class BootstrapData implements CommandLineRunner {
         artistaService.saveArtista(artista);
 
     }
-
-
 }

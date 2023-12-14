@@ -10,6 +10,5 @@ public interface UsuarioMapper {
 
     @Mapping(target = "id", ignore = true)
     Usuario toUsuario(UsuarioDto usuarioDto);
-
     UsuarioDto toUsuarioDto(Usuario usuario);
 }

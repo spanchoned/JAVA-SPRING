@@ -15,5 +15,4 @@ public class ConstantsUtils {
     public static final String STATUS_401 = "401";
     public static final String MESSAGE_401 = "No autorizado";
 
-
 }

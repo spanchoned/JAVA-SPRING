@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
 import static com.informatorio.java.spring.constants.ConstantsUtils.MESSAGE_201;
 import static com.informatorio.java.spring.constants.ConstantsUtils.STATUS_201;
 

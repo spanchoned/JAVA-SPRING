@@ -10,6 +10,5 @@ public interface ListaReproduccionMapper {
 
     @Mapping(target = "id", ignore = true)
     ListaReproduccion toListaReproduccion(ListaReproduccionDto listaReproduccionDto);
-
     ListaReproduccionDto toListaReproduccionDto(ListaReproduccion listaReproduccion);
 }

@@ -10,6 +10,5 @@ public interface GeneroMapper {
 
     @Mapping(target = "id", ignore = true)
     Genero toGenero(GeneroDto generoDto);
-
     GeneroDto toGeneroDto(Genero genero);
 }

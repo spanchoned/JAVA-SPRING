@@ -4,19 +4,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Column;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
 import lombok.*;
 import java.util.List;
+import jakarta.persistence.Column;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 public class ListaReproduccion extends Auditoria {
 
     @Id
@@ -34,9 +33,9 @@ public class ListaReproduccion extends Auditoria {
 
     private boolean repetirLista;
 
+    @Column(name = "reproducir_aleatoriamente")
     private boolean reproducirAleatoriamente;
 
     private boolean esPublica;
-
 
 }

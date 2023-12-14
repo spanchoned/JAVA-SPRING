@@ -4,7 +4,6 @@ import com.informatorio.java.spring.dominio.Album;
 import com.informatorio.java.spring.repository.AlbumRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -21,7 +20,6 @@ public class AlbumServiceImpl implements AlbumService {
     public List<Album> obtenerTodosLosAlbums() {
         return albumRepository.findAll();
     }
-
 
     @Override
     public void eliminarAlbum(Long id) {
