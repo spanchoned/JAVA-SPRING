@@ -6,4 +6,7 @@ public interface ListaReproduccionService {
     ListaReproduccion saveListaReproduccion(ListaReproduccion listaReproduccion);
     ListaReproduccion getListaReproduccionById(int listaReproduccionId);
 
+    void agregarCancionALista(int listaReproduccionId, int cancionId, int creadorId);
+    void eliminarCancionDeLista(int listaReproduccionId, int cancionId, int creadorId);
+
 }

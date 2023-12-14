@@ -26,5 +26,4 @@ public class Auditoria {
 
     @Column(length = 1000)
     private String descripcion;
-
 }

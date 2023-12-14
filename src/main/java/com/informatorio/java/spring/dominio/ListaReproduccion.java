@@ -36,7 +36,7 @@ public class ListaReproduccion extends Auditoria {
 
     private boolean reproducirAleatoriamente;
 
-    private boolean publica;
+    private boolean esPublica;
 
 
 }

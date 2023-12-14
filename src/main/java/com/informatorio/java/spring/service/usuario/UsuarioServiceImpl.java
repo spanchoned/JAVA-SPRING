@@ -4,7 +4,8 @@ import com.informatorio.java.spring.dominio.Usuario;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UsuarioServiceImpl extends UsuarioService {
+public class UsuarioServiceImpl implements UsuarioService {
+
     @Override
     public Usuario saveUsuario(Usuario usuario) {
         return usuario;
@@ -14,6 +15,4 @@ public class UsuarioServiceImpl extends UsuarioService {
     public Usuario getUsuarioById(int usuarioId) {
         return null;
     }
-
-
 }

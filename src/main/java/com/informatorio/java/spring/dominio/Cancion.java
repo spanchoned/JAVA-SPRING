@@ -24,8 +24,8 @@ public class Cancion extends Auditoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false)
-    private String nombre;
+    @Column(name = "titulo")
+    private String titulo;
 
     @Column(nullable = false)
     private int ranking;
@@ -37,7 +37,9 @@ public class Cancion extends Auditoria {
     @JoinColumn(name = "artista_id")
     private Artista artista;
 
-    private String album;
+    @ManyToOne
+    @JoinColumn(name = "album_id")
+    private Album album;
 
     @ManyToOne
     @JoinColumn(name = "genero_id")
@@ -46,4 +48,6 @@ public class Cancion extends Auditoria {
     @ManyToOne
     @JoinColumn(name = "lista_reproduccion_id")
     private ListaReproduccion listaReproduccion;
+
+
 }

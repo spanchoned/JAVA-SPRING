@@ -34,5 +34,4 @@ public class Usuario extends Auditoria {
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<ListaReproduccion> listasReproduccion;
 
-
 }

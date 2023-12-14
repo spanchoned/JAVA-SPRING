@@ -44,7 +44,7 @@ public class BootstrapData implements CommandLineRunner {
         listaReproduccionService.saveListaReproduccion(listaReproduccion);
 
         Cancion cancion = new Cancion();
-        cancion.setNombre("Cancion de Ejemplo");
+        cancion.setTitulo("Cancion de Ejemplo");
         cancionService.saveCancion(cancion);
 
         Genero genero = new Genero();

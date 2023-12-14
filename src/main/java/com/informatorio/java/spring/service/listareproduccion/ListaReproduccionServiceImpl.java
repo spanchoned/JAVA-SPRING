@@ -15,5 +15,15 @@ public class ListaReproduccionServiceImpl implements ListaReproduccionService {
         return null;
     }
 
+    @Override
+    public void agregarCancionALista(int listaReproduccionId, int cancionId, int creadorId) {
+
+    }
+
+    @Override
+    public void eliminarCancionDeLista(int listaReproduccionId, int cancionId, int creadorId) {
+
+    }
+
 
 }
