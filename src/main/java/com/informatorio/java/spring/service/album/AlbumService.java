@@ -5,7 +5,10 @@ import java.util.List;
 
 public interface AlbumService {
     List<Album> obtenerTodosLosAlbums();
+
     void eliminarAlbum(Long id);
+
     Album saveAlbum(Album album);
+
     Album getAlbumById(int albumId);
 }
